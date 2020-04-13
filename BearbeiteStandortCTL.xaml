@@ -1,0 +1,27 @@
+﻿<Window x:Class="Snackautomaten_Verwaltungsapp.BearbeiteStandortCTL"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:model="clr-namespace:Snackautomaten_Verwaltungsapp.Vmodel"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="Standort Add/Edit"
+             Height="300" Width="300">
+    <Grid >
+        <StackPanel Margin="20" HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch"
+                    >
+            <TextBlock Text="ID" FontWeight="Bold"/>
+            <TextBox x:Name="id" Text="{Binding Path=St.S_ID}" IsReadOnly="{Binding IsInEditMode}"/>
+        <TextBlock Text="Name" FontWeight="Bold"/>
+            <TextBox x:Name="name" Text="{Binding Path=St.S_NAME}"/>
+        <TextBlock Text="Adresse" FontWeight="Bold"/>
+            <TextBox x:Name="adresse" Text="{Binding Path=St.S_ADRESSE}"/>
+        <TextBlock Text="Bezeichnung" FontWeight="Bold"/>
+            <TextBox x:Name="bez" Text="{Binding Path=St.S_BEZ}"/>
+            <Button x:Name="btnsave" IsDefault="True" Content="Speichern" Margin="5" Click="Save_Click"/>
+            <Button x:Name="btncancel" Content="Zurück" Margin="5" 
+                    IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+   
+    
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="Snackautomaten_Verwaltungsapp.BearbeitePositionCTL"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:model="clr-namespace:Snackautomaten_Verwaltungsapp.Vmodel"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="Position Add/Edit"
+             Height="300" Width="300">
+    <Grid >
+        <StackPanel Margin="20" HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch"
+                    >
+            <TextBlock Text="ID" FontWeight="Bold"/>
+            <TextBlock x:Name="id" Text="{Binding Path=Pos.POS_ID}"/>
+            <TextBlock Text="Automaten ID"  FontWeight="Bold"/>
+            <ComboBox SelectedValue="{Binding Path=Pos.POS_A_ID}" 
+                      SelectedValuePath="A_ID"
+                        DisplayMemberPath="A_ID"
+                      ItemsSource="{Binding AlleAutomaten}"
+                      />
+            <TextBlock Text="Produkt"  FontWeight="Bold"/>
+            <ComboBox SelectedValue="{Binding Path=Pos.POS_P_ID}"
+                     DisplayMemberPath="P_NAME"
+                      SelectedValuePath="P_ID"
+                       ItemsSource="{Binding AlleProdukte}"
+                      />
+            <TextBlock Text="Leer?"  FontWeight="Bold"/>
+            <ComboBox SelectedValue="{Binding Path=Pos.POS_LEER}"
+                      ItemsSource="{Binding IsLeerOptions}"
+                      />
+            <Button x:Name="btnsave" IsDefault="True" Content="Speichern" Margin="5" Click="Save_Click"/>
+            <Button x:Name="btncancel" Content="Zurück" Margin="5" 
+                    IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

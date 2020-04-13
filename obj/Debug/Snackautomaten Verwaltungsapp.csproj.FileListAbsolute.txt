@@ -1,0 +1,123 @@
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\Snackautomaten Verwaltungsapp.exe
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\Snackautomaten Verwaltungsapp.pdb
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\MainWindow.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\App.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp_MarkupCompile.cache
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp_MarkupCompile.lref
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\MainWindow.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.g.resources
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten_Verwaltungsapp.Properties.Resources.resources
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.csproj.GenerateResource.cache
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.exe
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.pdb
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeAutomatenCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeKategorienCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeKontrollenCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeProdukteCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeStandortCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeAutomatenCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeKategorienCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeKontrollenCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeProdukteCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListeStandortCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteAutomatenCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKategorieCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKontrolleCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteProduktCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteStandortCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteAutomatenCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKategorieCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKontrolleCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteProduktCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteStandortCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp_Content.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.dll
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.xml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.csproj.CopyComplete
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeitePositionCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeitePositionCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newAutomatCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newKategorieCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newKontrolleCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newPositionCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newProduktCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newStandortCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newAutomatCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newKategorieCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newKontrolleCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newPositionCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newProduktCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\newStandortCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\AutomatenStatCTL.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\AutomatenStatCTL.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUI.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUI.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUC.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUC.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.csprojAssemblyReference.cache
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\Snackautomaten Verwaltungsapp.exe.config
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\SnackEmDB_log.ldf
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\SnackEmDB.mdf
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListePositionen.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\ListePositionen.baml
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteAutomatenWindowVmodelVer.g.cs
+C:\Users\Justyna\source\repos\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteAutomatenWindowVmodelVer.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.csprojAssemblyReference.cache
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\AutomatenStatCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteAutomatenCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKategorieCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKontrolleCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeitePositionCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteProduktCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteStandortCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeAutomatenCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeKategorienCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeKontrollenCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListePositionen.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeProdukteCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeStandortCTL.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\MainWindow.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUC.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUI.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\App.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp_Content.g.cs
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp_MarkupCompile.cache
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp_MarkupCompile.lref
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.exe
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.pdb
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\SnackEmDB_log.ldf
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\SnackEmDB.mdf
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\Snackautomaten Verwaltungsapp.exe.config
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\Snackautomaten Verwaltungsapp.exe
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\Snackautomaten Verwaltungsapp.pdb
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.dll
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.SqlServer.dll
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\WpfAnimatedGif.dll
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.xml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\EntityFramework.SqlServer.xml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\bin\Debug\WpfAnimatedGif.xml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\AutomatenStatCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteAutomatenCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKategorieCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteKontrolleCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeitePositionCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteProduktCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\BearbeiteStandortCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeAutomatenCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeKategorienCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeKontrollenCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListePositionen.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeProdukteCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\ListeStandortCTL.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\MainWindow.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUC.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\VendingMachineUI.baml
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.g.resources
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten_Verwaltungsapp.Properties.Resources.resources
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.csproj.GenerateResource.cache
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\Snackautomaten Verwaltungsapp.csproj.CopyComplete
+D:\School\S2020\POS\C#\Mein VModel\Snackautomaten Verwaltungsapp\obj\Debug\GeneratedInternalTypeHelper.g.cs

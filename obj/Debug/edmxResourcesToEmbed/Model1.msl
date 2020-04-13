@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SnackEmDBModelStoreContainer" CdmEntityContainer="SnackEmDBEntities">
+    <EntitySetMapping Name="AUTOMATENs">
+      <EntityTypeMapping TypeName="SnackEmDBModel.AUTOMATEN">
+        <MappingFragment StoreEntitySet="AUTOMATEN">
+          <ScalarProperty Name="A_ID" ColumnName="A_ID" />
+          <ScalarProperty Name="A_S_ID" ColumnName="A_S_ID" />
+          <ScalarProperty Name="A_INBETRIEB" ColumnName="A_INBETRIEB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KATEGORIEs">
+      <EntityTypeMapping TypeName="SnackEmDBModel.KATEGORIE">
+        <MappingFragment StoreEntitySet="KATEGORIE">
+          <ScalarProperty Name="K_ID" ColumnName="K_ID" />
+          <ScalarProperty Name="K_NAME" ColumnName="K_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KONTROLLEs">
+      <EntityTypeMapping TypeName="SnackEmDBModel.KONTROLLE">
+        <MappingFragment StoreEntitySet="KONTROLLE">
+          <ScalarProperty Name="KON_DATUM" ColumnName="KON_DATUM" />
+          <ScalarProperty Name="KON_A_ID" ColumnName="KON_A_ID" />
+          <ScalarProperty Name="KON_KOMMENT" ColumnName="KON_KOMMENT" />
+          <ScalarProperty Name="KON_ID" ColumnName="KON_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POSITIONs">
+      <EntityTypeMapping TypeName="SnackEmDBModel.POSITION">
+        <MappingFragment StoreEntitySet="POSITION">
+          <ScalarProperty Name="POS_ID" ColumnName="POS_ID" />
+          <ScalarProperty Name="POS_A_ID" ColumnName="POS_A_ID" />
+          <ScalarProperty Name="POS_P_ID" ColumnName="POS_P_ID" />
+          <ScalarProperty Name="POS_LEER" ColumnName="POS_LEER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUKTs">
+      <EntityTypeMapping TypeName="SnackEmDBModel.PRODUKT">
+        <MappingFragment StoreEntitySet="PRODUKT">
+          <ScalarProperty Name="P_ID" ColumnName="P_ID" />
+          <ScalarProperty Name="P_NAME" ColumnName="P_NAME" />
+          <ScalarProperty Name="P_BEZ" ColumnName="P_BEZ" />
+          <ScalarProperty Name="P_K_KATEGORIE" ColumnName="P_K_KATEGORIE" />
+          <ScalarProperty Name="P_URI_PHOTO" ColumnName="P_URI_PHOTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STANDORTs">
+      <EntityTypeMapping TypeName="SnackEmDBModel.STANDORT">
+        <MappingFragment StoreEntitySet="STANDORT">
+          <ScalarProperty Name="S_ID" ColumnName="S_ID" />
+          <ScalarProperty Name="S_NAME" ColumnName="S_NAME" />
+          <ScalarProperty Name="S_BEZ" ColumnName="S_BEZ" />
+          <ScalarProperty Name="S_ADRESSE" ColumnName="S_ADRESSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

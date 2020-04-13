@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SnackEmDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AUTOMATEN">
+    <Key>
+      <PropertyRef Name="A_ID" />
+    </Key>
+    <Property Name="A_ID" Type="int" Nullable="false" />
+    <Property Name="A_S_ID" Type="int" />
+    <Property Name="A_INBETRIEB" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KATEGORIE">
+    <Key>
+      <PropertyRef Name="K_ID" />
+    </Key>
+    <Property Name="K_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="K_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KONTROLLE">
+    <Key>
+      <PropertyRef Name="KON_DATUM" />
+    </Key>
+    <Property Name="KON_DATUM" Type="date" Nullable="false" />
+    <Property Name="KON_A_ID" Type="int" Nullable="false" />
+    <Property Name="KON_KOMMENT" Type="nvarchar" MaxLength="50" />
+    <Property Name="KON_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="POSITION">
+    <Key>
+      <PropertyRef Name="POS_ID" />
+    </Key>
+    <Property Name="POS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="POS_A_ID" Type="int" Nullable="false" />
+    <Property Name="POS_P_ID" Type="int" Nullable="false" />
+    <Property Name="POS_LEER" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODUKT">
+    <Key>
+      <PropertyRef Name="P_ID" />
+    </Key>
+    <Property Name="P_ID" Type="int" Nullable="false" />
+    <Property Name="P_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="P_BEZ" Type="nvarchar" MaxLength="50" />
+    <Property Name="P_K_KATEGORIE" Type="int" Nullable="false" />
+    <Property Name="P_URI_PHOTO" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="STANDORT">
+    <Key>
+      <PropertyRef Name="S_ID" />
+    </Key>
+    <Property Name="S_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="S_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="S_BEZ" Type="nvarchar" MaxLength="50" />
+    <Property Name="S_ADRESSE" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="A_S_ID">
+    <End Role="STANDORT" Type="Self.STANDORT" Multiplicity="0..1" />
+    <End Role="AUTOMATEN" Type="Self.AUTOMATEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STANDORT">
+        <PropertyRef Name="S_ID" />
+      </Principal>
+      <Dependent Role="AUTOMATEN">
+        <PropertyRef Name="A_S_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KON_A_ID">
+    <End Role="AUTOMATEN" Type="Self.AUTOMATEN" Multiplicity="1" />
+    <End Role="KONTROLLE" Type="Self.KONTROLLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUTOMATEN">
+        <PropertyRef Name="A_ID" />
+      </Principal>
+      <Dependent Role="KONTROLLE">
+        <PropertyRef Name="KON_A_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="P_K_KATEGORIE">
+    <End Role="KATEGORIE" Type="Self.KATEGORIE" Multiplicity="1" />
+    <End Role="PRODUKT" Type="Self.PRODUKT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KATEGORIE">
+        <PropertyRef Name="K_ID" />
+      </Principal>
+      <Dependent Role="PRODUKT">
+        <PropertyRef Name="P_K_KATEGORIE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="POS_A_ID">
+    <End Role="AUTOMATEN" Type="Self.AUTOMATEN" Multiplicity="1" />
+    <End Role="POSITION" Type="Self.POSITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUTOMATEN">
+        <PropertyRef Name="A_ID" />
+      </Principal>
+      <Dependent Role="POSITION">
+        <PropertyRef Name="POS_A_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="POS_P_ID">
+    <End Role="PRODUKT" Type="Self.PRODUKT" Multiplicity="1" />
+    <End Role="POSITION" Type="Self.POSITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUKT">
+        <PropertyRef Name="P_ID" />
+      </Principal>
+      <Dependent Role="POSITION">
+        <PropertyRef Name="POS_P_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SnackEmDBModelStoreContainer">
+    <EntitySet Name="AUTOMATEN" EntityType="Self.AUTOMATEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KATEGORIE" EntityType="Self.KATEGORIE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KONTROLLE" EntityType="Self.KONTROLLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="POSITION" EntityType="Self.POSITION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODUKT" EntityType="Self.PRODUKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="STANDORT" EntityType="Self.STANDORT" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="A_S_ID" Association="Self.A_S_ID">
+      <End Role="STANDORT" EntitySet="STANDORT" />
+      <End Role="AUTOMATEN" EntitySet="AUTOMATEN" />
+    </AssociationSet>
+    <AssociationSet Name="KON_A_ID" Association="Self.KON_A_ID">
+      <End Role="AUTOMATEN" EntitySet="AUTOMATEN" />
+      <End Role="KONTROLLE" EntitySet="KONTROLLE" />
+    </AssociationSet>
+    <AssociationSet Name="P_K_KATEGORIE" Association="Self.P_K_KATEGORIE">
+      <End Role="KATEGORIE" EntitySet="KATEGORIE" />
+      <End Role="PRODUKT" EntitySet="PRODUKT" />
+    </AssociationSet>
+    <AssociationSet Name="POS_A_ID" Association="Self.POS_A_ID">
+      <End Role="AUTOMATEN" EntitySet="AUTOMATEN" />
+      <End Role="POSITION" EntitySet="POSITION" />
+    </AssociationSet>
+    <AssociationSet Name="POS_P_ID" Association="Self.POS_P_ID">
+      <End Role="PRODUKT" EntitySet="PRODUKT" />
+      <End Role="POSITION" EntitySet="POSITION" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

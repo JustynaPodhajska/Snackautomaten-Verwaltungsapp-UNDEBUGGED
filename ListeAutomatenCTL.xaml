@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Snackautomaten_Verwaltungsapp.ListeAutomatenCTL"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Snackautomaten_Verwaltungsapp"
+             xmlns:model="clr-namespace:Snackautomaten_Verwaltungsapp.Vmodel"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="data" ObjectType="{x:Type model:ListeAutomatenVMODEL}"/>
+    </UserControl.Resources>
+    <Grid  x:Name="contentctrl" DataContext="{Binding Source={StaticResource data}}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Automat" HorizontalAlignment="Center" FontWeight="ExtraBold"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Position" HorizontalAlignment="Center" FontWeight="ExtraBold"/>
+            <DataGrid  Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False" ItemsSource="{Binding Path=AlleAutomaten}" SelectedValue="{Binding Path=SelectedAutomat,Mode=OneWayToSource,BindsDirectlyToSource=True}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="4*" Header="ID" Binding="{Binding A_ID}"/>
+                    <DataGridTextColumn Width="10*" Header="Standort" Binding="{Binding STANDORT.S_NAME}"/>
+                    <DataGridTextColumn Width="3*" Header="In Betrieb" Binding="{Binding A_INBETRIEB}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid Grid.Row="1" Grid.Column="1" AutoGenerateColumns="False" ItemsSource="{Binding Path=AutomatPositions}" SelectedValue="{Binding Path=SelectedPosition,Mode=TwoWay,BindsDirectlyToSource=True}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="4*" Header="PosID" Binding="{Binding POS_ID}"/>
+                    <DataGridTextColumn Width="8*" Header="Automat ID" Binding="{Binding PRODUKT.P_NAME}"/>
+                    <DataGridTextColumn Width="3*" Header="Leer" Binding="{Binding POS_LEER}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Grid.Row="1" Grid.Column="2">
+                <TextBlock Text="Automat:" Margin="10,0,0,0"/>
+                <StackPanel x:Name="stackButtons" Orientation="Horizontal" Margin="15">
+                    <Button Content="Hinzufügen" Height="25" Padding="5" Command="{Binding Path=NewCommand}"/>
+                    <Button Content="Editieren" Height="25" Padding="5" Command="{Binding Path=SaveCommand}"/>
+                    <Button Content="Löschen" Height="25" Padding="5" Command="{Binding Path=DeleteCommand}"/>
+                </StackPanel>
+                <TextBlock Text="Position:" Margin="10,0,0,0"/>
+                <StackPanel Orientation="Horizontal" Margin="15">
+                    <Button Content="Hinzufügen" Height="25" Padding="5" Command="{Binding Path=NewCommandPos}"/>
+                    <Button Content="Editieren" Height="25" Padding="5" Command="{Binding Path=SaveCommandPos}"/>
+                    <Button Content="Löschen" Height="25" Padding="5" Command="{Binding Path=DeleteCommandPos}"/>
+                </StackPanel>
+                <Image Source="vending machine.jpeg" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+
+</UserControl>

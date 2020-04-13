@@ -1,0 +1,49 @@
+﻿<Window x:Class="Snackautomaten_Verwaltungsapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snackautomaten_Verwaltungsapp"
+        xmlns:localv="clr-namespace:Snackautomaten_Verwaltungsapp.Vmodel"
+        mc:Ignorable="d"
+        Height="627" Width="950" 
+        Icon="mainWindowIcon.bmp" Title="Snack'em"
+        >
+
+    <Window.Resources>
+        <localv:MenuVMODEL x:Key="cmds" />
+    </Window.Resources>
+    <DockPanel DataContext="{Binding Source={StaticResource cmds}}">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Übersicht">
+                <MenuItem Header="Liste...">
+                    <MenuItem Header="Standörter" Command="{Binding}" CommandParameter="StandortClick"/>
+                    <MenuItem Header="Automaten" Command="{Binding}" CommandParameter="AutomatenClick"/>
+                    <MenuItem Header="Kategorien" Command="{Binding}" CommandParameter="KategorieClick"/>
+                    <MenuItem Header="Produkte" Command="{Binding}" CommandParameter="ProdukteClick"/>
+                    <MenuItem Header="Kontrollen" Command="{Binding}" CommandParameter="KontrollenClick"/>
+                    <MenuItem Header="Positionen" Command="{Binding}" CommandParameter="PositionenClick"/>
+                </MenuItem>
+                <MenuItem Header="Automaten Statistik" Command="{Binding}" CommandParameter="StatistikClick"/>
+                <MenuItem Header="Exit" InputGestureText="Alt+F4" Command="{Binding}" CommandParameter="ExitClick"/>
+            </MenuItem>
+        </Menu>
+        <Grid x:Name="contentctrl">
+            <Image Source="splashSnackEm.jpg" Stretch="Uniform" Margin="150" x:Name="imageContainer">
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard >
+                                <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="Margin" BeginTime="00:00:00">
+                                    <SplineThicknessKeyFrame KeyTime="00:00:00" Value="250" />
+                                    <SplineThicknessKeyFrame KeyTime="00:00:04" Value="150" />
+                                </ThicknessAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+        </Grid>
+    </DockPanel>
+</Window>
+    

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="568fb7be4d004c1388f7ac77a18849bd" Name="Diagram1">
+        <EntityTypeShape EntityType="SnackEmDBModel.AUTOMATEN" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnackEmDBModel.KATEGORIE" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnackEmDBModel.KONTROLLE" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnackEmDBModel.POSITION" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnackEmDBModel.PRODUKT" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnackEmDBModel.STANDORT" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="SnackEmDBModel.A_S_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnackEmDBModel.KON_A_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnackEmDBModel.POS_A_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnackEmDBModel.P_K_KATEGORIE" ManuallyRouted="false" />
+        <AssociationConnector Association="SnackEmDBModel.POS_P_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

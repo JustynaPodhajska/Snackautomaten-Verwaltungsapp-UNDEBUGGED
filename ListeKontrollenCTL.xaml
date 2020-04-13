@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Snackautomaten_Verwaltungsapp.ListeKontrollenCTL"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Snackautomaten_Verwaltungsapp"
+             xmlns:model="clr-namespace:Snackautomaten_Verwaltungsapp.Vmodel"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="data" ObjectType="{x:Type model:ListeKontrollenVMODEL}"/>
+    </UserControl.Resources>
+    <Grid DataContext="{Binding Source={StaticResource data}}" Height="627" Width="950" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Kontrollen" HorizontalAlignment="Center" FontWeight="ExtraBold"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Info" HorizontalAlignment="Center" FontWeight="ExtraBold" TextWrapping="Wrap"/>
+            <DataGrid Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False" ItemsSource="{Binding Path=AlleKontrollen}" SelectedValue="{Binding Path=SelectedKontrolle,Mode=OneWayToSource,BindsDirectlyToSource=True}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="2*" Header="ID" Binding="{Binding KON_ID}"/>
+                    <DataGridTextColumn Width="7*" Header="Automat" Binding="{Binding KON_A_ID}"/>
+                    <DataGridTextColumn Width="7*" Header="Letzte Kontrolle" Binding="{Binding KON_DATUM}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,10,10,20">
+                <StackPanel DataContext="{Binding Path=SelectedKontrolle}">
+                    <TextBlock Text="ID" FontWeight="Bold" Padding="10"/>
+                    <TextBlock Text="{Binding KON_ID}"/>
+                    <TextBlock Text="Automat ID" FontWeight="Bold" Padding="10"/>
+                    <TextBlock Text="{Binding KON_A_ID}" />
+                    <TextBlock Text="Datum" FontWeight="Bold" Padding="10"/>
+                    <DatePickerTextBox IsReadOnly="True"  Text="{Binding KON_DATUM}"/>
+                    <TextBlock Text="Kommentare und Anmerkungen" FontWeight="Bold" Padding="10"/>
+                    <TextBlock Text="{Binding KON_KOMMENT}" />
+                </StackPanel>
+                <TextBlock Text="Kontrolle:" Margin="20,20,0,0"/>
+                <StackPanel x:Name="stackButtons" Orientation="Horizontal" Margin="15">
+                    <Button Content="Hinzufügen" Height="25" Padding="5" Command="{Binding Path=NewCommand}"/>
+                    <Button Content="Editieren" Height="25" Padding="5" Command="{Binding Path=SaveCommand}"/>
+                    <Button Content="Löschen" Height="25" Padding="5" Command="{Binding Path=DeleteCommand}"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
